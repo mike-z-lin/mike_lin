@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RenterItemActivity">
+    <TextView
+        android:id="@+id/textSpinnerLable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="category:"
+        android:textAlignment="center"
+        />
+
+    <Spinner
+        android:id="@+id/editItemCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_below="@id/textSpinnerLable"
+        android:spinnerMode="dropdown"/>
+
+
+    <EditText
+        android:id="@+id/editItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/editItemCategory"
+        android:hint="Item Name" />
+
+
+    <Button
+        android:id="@+id/searchItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editItemName"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+        android:text="Search" />
+
+
+    <TextView
+        android:id="@+id/textItemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchItemButton"
+        android:text="Items"
+        android:textAlignment="center"
+        />
+
+    <ListView
+        android:id="@+id/listViewItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textItemView">
+    </ListView>
+</RelativeLayout>

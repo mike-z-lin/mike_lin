@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/cate_name_fee" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/textItemName" android:gravity="left" android:layout_weight="0.5" android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" android:text=""/>
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/textItemCategory" android:gravity="left" android:layout_weight="0.5" android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:text=""/>
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/textItemFee" android:gravity="left" android:layout_weight="0.5" android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:text=""/>
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/begin_end" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cate_name_fee"
+        android:orientation="horizontal">
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/textItemDescription"  android:gravity="left" android:layout_weight="0.5" android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:text=""/>
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/textItemBegin" android:gravity="left" android:layout_weight="0.5" android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:text=""/>
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/textItemEnd" android:gravity="left" android:layout_weight="0.5" android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_below="@id/begin_end"  android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="horizontal"  android:weightSum="1" >
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/textItemRequest" android:gravity="left" android:layout_weight="0.5" android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:text=""/>
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/textItemResponse" android:gravity="left" android:layout_weight="0.5" android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:text=""/>
+    </LinearLayout>
+
+</LinearLayout>
+

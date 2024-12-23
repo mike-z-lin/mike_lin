@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "595659015519",
+    "project_id": "rentify-4d285",
+    "storage_bucket": "rentify-4d285.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595659015519:android:09245abdb3bcaa2538a2ea",
+        "android_client_info": {
+          "package_name": "edu.uottawa.SEG2105"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYMQ4W00GKM4yxcUzIg1gqt3FEI6wml1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

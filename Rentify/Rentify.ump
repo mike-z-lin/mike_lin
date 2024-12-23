@@ -1,0 +1,78 @@
+class AppCompatActivity {
+  displayColor LightGray;
+}
+
+
+class LoginRegisterActivity {
+  isA AppCompatActivity;
+  ActivityResultLauncher postLauncher;
+  ActivityLoginRegisterBinding binding;
+  string role;
+}
+
+class PostLoginActivity {
+  isA AppCompatActivity;
+}
+
+
+class User {
+  string email;
+  string password;
+  string role;
+  string name;
+}
+
+
+class UserList {
+  string currentUser;
+  string currentUserRole;
+  1 -- * User;
+}
+class LoggedInUser {
+  string userId;
+  string displayName;
+  string role;
+  boolean isAdmin;
+}
+
+class LoggedInUserView {
+  string displayName;
+  string role;
+}
+
+class LoginFormState {
+  Integer usernameError;
+  Integer passwordError;
+  boolean isDataValid;
+}
+class ViewModel {
+  displayColor LightGray;
+}
+
+class LoginViewModel {
+  isA ViewModel;
+  MutableLiveData loginFormState;
+  MutableLiveData loginResult;
+  LoginRepository loginRepository;
+  FirebaseDatabase fd;
+  boolean hasAdmin;
+  1 -- 1 LoginRegisterActivity;
+}
+class Result {}
+class LoginResult {
+  LoggedInUserView success;
+  Integer error;
+}
+
+class LoginDataSource {
+}
+class LoginRepository {
+  LoginRepository instance;
+  LoginDataSource dataSource;
+  LoggedInUser user = null;
+  1 -- 1 LoginDataSource;
+}
+
+class LoginViewModelFactory{}
+
+namespace edu.uottawa.SEG2105.data.model;
